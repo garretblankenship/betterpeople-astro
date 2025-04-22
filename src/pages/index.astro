@@ -1,11 +1,395 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Better People">
+	<section id="hero">
+		<div class="section-overlay"></div>
+		<div class="flex-container">
+			<div class="left">
+				<h1>
+					Unlock Your Potential
+				</h1>
+				<h3>We deliver unforgettable live training experiences designed to spark curiosity and build real-world skills. From Cloud Computing and AI to Big Data, Programming and Analytics.</h3>
+				<a href="/courses">View Our Courses</a>
+			</div>
+			<div class="right">
+	
+			</div>
+		</div>
+	</section>
+	<section id="why">
+		<h2>
+			Why Choose Better People?
+		</h2>
+		<h3>
+			We offer training experiences that stick. Say goodbye to boring lectures!
+		</h3>
+		<div class="flex-container">
+			<div>
+				<div class="icon a"></div>
+				<h4>Live Events</h4>
+				<p>Experience the thrill of live training with industry experts. No snoozefests here.</p>
+			</div>
+			<div>
+				<div class="icon b"></div>
+				<h4>Custom Courses</h4>
+				<p>Tailored content that fits your needs. Because cookie-cutter solutions just dont' cut it.</p>
+			</div>
+			<div>
+				<div class="icon c"></div>
+				<h4>Expert Trainers</h4>
+				<p>Learn from the best in the business. Our trainers are legends in their fields.</p>
+			</div>
+			<div>
+				<div class="icon d"></div>
+				<h4>Interactive Learning</h4>
+				<p>Get ready to participate. We believe in learning by doing, not just sitting.</p>
+			</div>
+		</div>
+	</section>
+	<section id="featured">
+		<div class="flex-container">
+			<div class="left">
+				<h5 class="exam">AWS Exam Prep</h5>
+				<h2>
+					Certified Cloud Practitioner
+				</h2>
+				<p>
+					This course offers a foundational understanding of cloud computing by exploring Amazon Web Services (AWS), a leading cloud provider. You'll learn essential cloud concepts and core AWS services, empowering you to communicate effectively with technical teams and make informed decisions about cloud technology.
+				</p>
+				<p>
+					The course content has been created to directly align with the AWS Certified Cloud Practitioner exam guide, equipping you with the necessary knowledge to confidently pass the exam on your first attempt should you choose to pursue certification.
+				</p>
+				<a href="/courses/aws/ccp">Learn More</a>
+			</div>
+			<div class="right">
+
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<h2>Why Work With Us?</h2>
+		<div class="flex-container">
+			<div>
+				<div class="image a">
+					<!-- <p class="title a">Trainer & Course Designer</p> -->
+				</div>
+				<h4>Garret Blankenship</h4>
+				<h5>Trainer & Course Designer</h5>
+				<p>Garret is a highly experienced technology leader and educator specializing in data, software, and cloud infrastructure.  His proven track record in developing and delivering impactful training programs, combined with his deep technical expertise, makes him an ideal partner for individuals and organizations seeking to enhance their skills in these critical areas.</p>
+				<a href="https://www.linkedin.com/in/garretblankenship/" target="_blank">View Profile</a>
+			</div>
+			<div>
+				<div class="image b">
+					<!-- <p class="title b">Client Success</p> -->
+				</div>
+				<h4>Ijan Kruizinga</h4>
+				<h5>Client Success & Partnerships</h5>
+				<p>Ijan is a seasoned business leader with 20+ years of experience in go-to-market strategy and operations. With a strong track record at leading technology and marketing companies, he heads up client success and partnerships at Better People, helping individuals and businesses accelerate growth through targeted training programs.</p>
+				<a href="https://www.linkedin.com/in/ijank/" target="_blank">View Profile</a>
+			</div>
+		</div>
+	</section>
+	<section id="calendar">
+		<h2>Book A Discovery Call</h2>
+		<h3>Want a custom course or a private class delivery?</h3>
+		<iframe src="https://api.leadconnectorhq.com/widget/booking/izI9pNcBpysUXy3VHMdr" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="izI9pNcBpysUXy3VHMdr_1744710102045"></iframe><br><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+	</section>
 </Layout>
+
+<style>
+	section#hero {  
+		position: relative;
+		z-index: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	section#hero div.flex-container {
+		width: 100%;
+		padding: 60px;
+		display: flex;
+		position: relative;
+		z-index: 2;
+		align-items: center;
+	}
+
+	section#hero div.section-overlay {
+		position: absolute;
+		background-color: #e8edee;
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	section#hero div {
+		width: 100%;
+	}
+
+	section#hero div.left p {
+		width: 80%;
+		max-width: 700px;
+	}
+
+	section#hero div.right {
+		background-image: url(../assets/2.png);
+		margin-left: 24px;
+		height: 540px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 40px;
+		display: none;
+	}
+
+	section#hero h3 {
+		padding: 56px 0;
+	}
+
+	section#why {
+		padding: 80px 40px;
+	}
+
+	section#why h2, section#why h3{
+		text-align: center;
+	}
+
+	section#why h3 {
+		padding: 56px 0 76px 0;
+	}
+
+	section#why div.flex-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: -40px;
+	}
+
+	section#why div.flex-container > div {
+		width: 25%;
+		padding: 0 20px;
+		min-width: 184px;
+		flex-grow: 1;
+		margin-top: 40px;
+	}
+
+	section#why h4 {
+		margin: 30px 0;
+		padding-top: 30px;
+		border-top: 1px solid #d2d2d2;
+	}
+
+	section#why div.icon {
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin: auto;
+	}
+
+	section#why div.icon.a {
+		background-image: url(../assets/3.png);
+	}
+
+	section#why div.icon.b {
+		background-image: url(../assets/4.png);
+	}
+
+	section#why div.icon.c {
+		background-image: url(../assets/5.png);
+	}
+
+	section#why div.icon.d {
+		background-image: url(../assets/6.png);
+	}
+
+	section#featured {
+		padding: 80px 14px;
+	}
+
+	section#featured div.flex-container {
+		display: flex;
+		border-radius: 40px;
+		padding: 20px 24px;
+		flex-direction: column-reverse;
+		border: 2px solid #d2d2d2;
+	}
+
+	section#featured div.flex-container > div {
+		width: 100%;
+	}
+
+	section#featured div.left {
+		padding: 44px 4px;
+	}
+
+	section#featured div.left h2 {
+		margin-bottom: 56px;
+	}
+
+	section#featured div.left h5 {
+		margin-bottom: 40px;
+	}
+
+	section#featured div.left p {
+		margin-bottom: 40px;
+	}
+
+	section#featured div.left a {
+		margin-top: 20px;
+		display: inline-block;
+	}
+
+	section#featured div.right {
+		background-image: url(../assets/9.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 20px;
+		height: 600px;
+	}
+
+	section#about {
+		padding: 40px 40px 120px 40px;
+		max-width: 1800px;
+		margin: auto;
+	}
+
+	section#about h2 {
+		padding-bottom: 88px;
+		text-align: center;
+	}
+
+	section#about div.flex-container{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: -80px;
+	}
+
+	section#about div.flex-container > div{
+		width: 50%;
+		padding: 0 40px;
+		min-width: 300px;
+		flex-grow: 1;
+		margin-top: 80px;
+	}
+
+	section#about div.image {
+		height: 400px;
+		border-radius: 40px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: 20px;
+		padding: 0 10px;
+	}
+
+	section#about div.image.a{
+
+		background-image: url(../assets/7.png);
+	}
+
+	section#about div.image.b{
+
+		background-image: url(../assets/8.png);
+	}
+
+	section#about div.image p.title {
+		padding: 16px 20px;
+		margin: 0 0 20px 0;
+		border-radius: 40px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	section#about div.image p.title.a {
+		background-color: #d2f0f2;
+	}
+
+	section#about div.image p.title.b {
+		background-color: #8fdde7;
+	}
+
+	section#about div p {
+		margin: 24px 0 56px 0;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	section#calendar {
+		background-color: #e8edee;
+		padding: 88px 40px;
+	}
+
+	section#calendar h2 {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section#calendar h3 {
+		padding: 0px 0 88px 0;
+		text-align: center;
+	}
+
+	@media only screen and (min-width:1000px) {
+		section#hero div {
+        width: 50%;
+    }
+
+    section#hero div.section-overlay {
+        border-radius: 40px;
+    }
+
+    section#hero div.right {
+        display: block;
+    }
+
+    section#why {
+        padding: 100px 184px;
+    }
+
+    section#featured {
+        padding: 80px 44px;
+    }
+
+    section#featured div.flex-container {
+        flex-direction: row;
+    }
+
+    section#featured div.flex-container > div {
+        width: 50%;
+    }
+
+    section#featured div.left {
+        padding: 44px;
+    }
+
+    section#featured div.right {
+        padding-left: 24px;
+        height: 760px;
+    }
+
+    section#about {
+        padding: 100px 184px;
+    }
+
+    section#calendar {
+        padding: 88px 180px;
+        border-radius: 40px;
+    }
+
+    section#calendar h3 {
+        padding: 0px 0 34px 0;
+    }
+
+
+	}
+</style>

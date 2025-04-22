@@ -1,14 +1,94 @@
+---
+import "../styles/reset.css";
+import "../styles/global.css"
+
+const {title, } = Astro.props;
+---
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7WS5RZSQ7"></script>
+		<script is:inline>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-F7WS5RZSQ7');
+		</script>
+		<!-- End Google Tag-->
+		<!-- Meta Pixel Code -->
+		<script is:inline>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1711630126420206');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1711630126420206&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Meta Pixel Code -->
+		<!-- Hotjar Tracking Code for https://betterpeople.com.au -->
+		<script is:inline>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:5355720,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+		<!-- End Hotjar -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{title}</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.png">
+		<meta property="og:title" content={title}>
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="https://betterpeople.com.au/assets/logo.png">
+		<meta property="og:url" content="https://betterpeople.com.au">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="og:description" content="At Better People, we craft unforgettable live training experiences that ignite passion and knowledge. Join our live events or get custom courses tailored just for you.">
+		<meta property="og:site_name" content="Better People">
+		<meta name="twitter:image:alt" content="Better People">
 	</head>
 	<body>
-		<slot />
+		<main>
+			<header>
+				<a href="/" class="logo"></a>
+				<div>
+					<ul>
+						<li><a href="/courses">Courses</a></li>
+						<li><a href="/ask-me-anything">Ask Me</a></li>
+						<li><a href="/#calendar">Contact Us</a></li>
+					</ul>
+				</div>
+			</header>
+			<slot />
+			<footer>
+				<div>
+					<p>2025 Better People.</p>
+					<p>All rights reserved.</p>
+				</div>
+				<div>
+					<a class="plain" href="/terms-and-conditions/">Terms And Conditions</a>
+					<a class="plain" href="/privacy-policy">Privacy Policy</a>
+				</div>
+	
+				<script 
+					src="https://widgets.leadconnectorhq.com/loader.js"  
+					data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+					data-widget-id="67f3377d8e2d43efcdc8ed9d"> 
+				</script>
+			</footer>
+		</main>
 	</body>
 </html>
 
