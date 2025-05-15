@@ -43,6 +43,30 @@ h4 {
     font-weight: 600;
 }
 
+h4.sub1 {
+    color: #1eaff7;
+}
+
+h4.sub2 {
+    color: #19bf7a;
+}
+
+h4.sub3 {
+    color: #F7931E;
+}
+
+div.sub1 {
+    background-color: #1eaff7;
+}
+
+div.sub2 {
+    background-color: #19bf7a;
+}
+
+div.sub3 {
+    background-color: #F7931E;
+}
+
 h5 {
     font-size: 20px;
     font-weight: 800;
@@ -82,6 +106,23 @@ a:hover {
 a.plain:hover{
     color: #369fc8;
     background-color: transparent;
+}
+
+button.main {
+    background-color: #006F9B;
+    color: #F9FAFB;
+    padding: 14px 24px;
+    border-radius: 48px;
+    border: none;
+    cursor: pointer;
+}
+
+button.main[aria-selected="true"]  {
+    background-color: #369fc8;
+}
+
+button.main:hover {
+    background-color: #369fc8;
 }
 
 main {

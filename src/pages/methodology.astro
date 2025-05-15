@@ -3,5 +3,485 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Methodology">
-    
+    <section id="hero">
+		<div class="section-overlay"></div>
+		<div class="flex-container">
+			<div class="left">
+				<h1>
+					The Contextual Learning Cycle
+				</h1>
+				<h3>Our research-backed methodology ensures technical skills training is contextualized, practical, engaging, and supported throughout the entire learning journey.</h3>
+			</div>
+			<div class="right"></div>
+		</div>
+	</section>
+    <section id="philosophy">
+        <h2>Our Core Philosophy</h2>
+		<h3>We believe that for technical skills training to be truly effective, it must be contextualized, practical, engaging, and supported throughout the entire learning journey.</h3>
+        <div class="flex-container">
+            <div>
+			    <div class="icon a"></div>
+				<h4>Contextual</h4>
+				<p>Learning is tailored to specific environments and needs, ensuring relevance and immediate applicability.</p>
+			</div>
+			<div>
+				<div class="icon b"></div>
+				<h4>Practical</h4>
+				<p>Hands-on experience and real-world problem solving build sustainable skills that translate directly to workplace success.</p>
+			</div>
+			<div>
+				<div class="icon c"></div>
+				<h4>Engaging</h4>
+				<p>Interactive methods and collaborative approaches maintain motivation and maximize knowledge retention.</p>
+			</div>
+			<div>
+				<div class="icon d"></div>
+				<h4>Supported</h4>
+				<p>Ongoing resources and community support ensure continued growth and application long after formal training ends.</p>
+			</div>
+        </div>
+    </section>
+    <section id="phases">
+        <h2>
+			The Three Phases
+		</h2>
+		<h3>
+			Our proven methodology ensures comprehensive training that extends beyond the classroom, creating lasting impact through a strategic three-phase approach.
+		</h3>
+        <div class="tab-menu" role="tablist" aria-label="Learning phases">
+            <button 
+              id="phase1-tab" 
+              class="main" 
+              role="tab" 
+              aria-selected="true" 
+              aria-controls="phase1-panel"
+              data-phase="1"
+            >
+              Phase 1: Pre-Class
+            </button>
+            <button 
+              id="phase2-tab" 
+              class="main" 
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="phase2-panel"
+              data-phase="2"
+            >
+              Phase 2: Delivery
+            </button>
+            <button 
+              id="phase3-tab" 
+              class="main" 
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="phase3-panel"
+              data-phase="3"
+            >
+              Phase 3: Post-Class
+            </button>
+        </div>
+        <!-- Phase content panels -->
+        <div class="phase-container">
+            <!-- Progress bar -->
+            <div class="phase-progress-container">
+            <div id="phase-progress" class="h-full bg-primary-500 w-1/3 transition-all duration-500"></div>
+            </div>
+            
+            <!-- Phase 1 -->
+            <div 
+            id="phase1-panel" 
+            role="tabpanel" 
+            aria-labelledby="phase1-tab" 
+            class="phase-panel"
+            >
+                <div class="container">
+                    <div class="left">
+                        <h4 class="sub1">Laying the Foundation for Relevance</h4>
+                        <h5>Objective</h5>
+                        <p>To deeply understand the learning need and the audience to ensure the course is highly relevant, targeted, and set up for measurable success.</p>
+                        <h5>How We Do It</h5>
+                        <ul>
+                            <li><div class="bullet sub1"></div>
+                                <p>
+                                    Discovery and Needs Assessments: Using market research, job market analysis, and direct stakeholder interviews to pinpoint critical skill gaps.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub1"></div>
+                                <p>
+                                    Audience Identification & Segmentation: Understanding current skill levels and specific benefits for different groups.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub1"></div>
+                                <p>
+                                    Measurable Outcomes: Defining clear metrics to track the training's impact from day one.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div 
+            id="phase2-panel" 
+            role="tabpanel" 
+            aria-labelledby="phase2-tab" 
+            class="phase-panel"
+            >
+                <div class="container">
+                    <div class="left">
+                        <h4 class="sub2">Immersive and Interactive Skill Building</h4>
+                        <h5>Objective</h5>
+                        <p>To facilitate active learning, skill practice, and knowledge retention through engaging, collaborative, and thoughtfully paced methods.</p>
+                        <h5>How We Do It</h5>
+                        <ul>
+                            <li><div class="bullet sub2"></div>
+                                <p>
+                                    Interactive Content: Live demonstrations, hands-on labs, real-time Q&A, and integrated quizzes to keep engagement high.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub2"></div>
+                                <p>
+                                    Facilitate Collaboration and Peer Learning: Encouraging participants to share experiences and learn from each other.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub2"></div>
+                                <p>
+                                    "Mental Jogging" and Active Breaks: Maintaining engagement and optimizing cognitive function for sustainable learning.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div 
+            id="phase3-panel" 
+            role="tabpanel" 
+            aria-labelledby="phase3-tab" 
+            class="phase-panel"
+            >
+                <div class="container">
+                    <div class="left">
+                        <h4 class="sub3">Sustaining Momentum and Application</h4>
+                        <h5>Objective</h5>
+                        <p>To provide ongoing access to resources and foster a supportive community, ensuring learners can reinforce their knowledge, apply their new skills, and continue their development journey.</p>
+                        <h5>How We Do It</h5>
+                        <ul>
+                            <li><div class="bullet sub3"></div>
+                                <p>
+                                    Comprehensive Resource Provision: All materials, video recordings, and Q&A documents housed in a central, easily accessible hub.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub3"></div>
+                                <p>
+                                    Foster a Community of Practice: Creating a dedicated online space for the class to interact, ask questions, and receive support.
+                                </p>
+                            </li>
+                            <li><div class="bullet sub3"></div>
+                                <p>
+                                    Long-term Alumni Network: Integration into a broader network for continued engagement and professional growth.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<style>
+	section#hero {  
+		position: relative;
+		z-index: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	section#hero div.flex-container {
+		width: 100%;
+		padding: 60px;
+		display: flex;
+		position: relative;
+		z-index: 2;
+		align-items: center;
+	}
+
+	section#hero div.section-overlay {
+		position: absolute;
+		/* background-color: #e8edee; */
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	section#hero div {
+		width: 100%;
+	}
+
+	section#hero div.left p {
+		width: 80%;
+		max-width: 700px;
+	}
+
+	section#hero div.right {
+		background-image: url(../assets/2.png);
+		overflow: hidden;
+		margin-left: 24px;
+		height: 540px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 40px;
+		display: none;
+	}
+
+	section#hero h3 {
+		padding: 56px 0;
+	}
+
+    section#philosophy {
+		background-color: #e8edee;
+		padding: 88px 40px;
+	}
+
+	section#philosophy h2 {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section#philosophy h3 {
+		padding: 0px 0 88px 0;
+		text-align: center;
+	}
+
+    section#philosophy div.flex-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: -40px;
+	}
+
+	section#philosophy div.flex-container > div {
+        width: calc(25% - 40px);
+        margin: 0 20px;
+        padding: 40px 10px;
+        border-radius: 20px;
+		min-width: 184px;
+		flex-grow: 1;
+		margin-top: 40px;
+        text-align: center;
+        background-color: #fff;
+	}
+
+	section#philosophy h4 {
+		margin: 30px 0;
+		padding-top: 30px;
+		border-top: 1px solid #d2d2d2;
+	}
+
+	section#philosophy div.icon {
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin: auto;
+	}
+
+	section#philosophy div.icon.a {
+		background-image: url(../assets/3.png);
+	}
+
+	section#philosophy div.icon.b {
+		background-image: url(../assets/4.png);
+	}
+
+	section#philosophy div.icon.c {
+		background-image: url(../assets/5.png);
+	}
+
+	section#philosophy div.icon.d {
+		background-image: url(../assets/6.png);
+	}
+
+    section#phases {
+		padding: 80px 40px 0px 40px;
+	}
+
+	section#phases h2, section#phases h3{
+		text-align: center;
+	}
+
+	section#phases h3 {
+		padding: 56px 0 76px 0;
+	}
+    
+    section#phases .tab-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .phase-container {
+        position: relative;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .phase-progress-container {
+        --tw-bg-opacity: 1;
+        background-color: rgb(233 236 238 / var(--tw-bg-opacity, 1));
+        width: 100%;
+        height: 0.25rem;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+    }
+
+    #phase-progress {
+        width: 33.3333%;
+        transition-duration: 500ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        --tw-bg-opacity: 1;
+        background-color: rgb(15 91 148 / var(--tw-bg-opacity, 1));
+        height: 100%;
+    }
+
+    .phase-panel .container {
+        display: flex;
+        gap: 30px;
+    }
+
+    .phase-panel .container .left {
+        width: 50%;
+    }
+
+    .phase-panel .container .right {
+        flex-grow: 1;
+        background-image: url(../assets/2.png);
+		overflow: hidden;
+		height: 540px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 40px;
+    }
+
+    .phase-panel .container h4 {
+        margin-bottom: 40px;
+    }
+
+    .phase-panel .container h5 {
+        margin: 20px 0px;
+    }
+
+    .phase-panel .container ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    .phase-panel .container ul li {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+    }
+
+    .phase-panel .container ul li .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 40px;
+        margin-top: 8px;
+    }
+
+    .phase-panel .container ul li p {
+        flex-basis: min-content;
+        flex-grow: 1;
+    }
+
+    .phase-panel .container ul li:first {
+        padding-top: 0px;
+    }
+
+    .phase-panel .container ul li:last {
+        padding-bottom: 0px;
+    } 
+
+
+    @media only screen and (min-width:1000px) {
+        section#hero div {
+            width: 50%;
+        }
+
+        section#hero div.section-overlay {
+            border-radius: 40px;
+        }
+
+        section#hero div.right {
+            display: block;
+        }
+
+        section#philosophy {
+            padding: 88px 180px;
+            border-radius: 40px;
+        }
+
+        section#philosophy h3 {
+            padding: 0px 0 80px 0;
+        }
+
+        section#phases {
+            padding: 100px 184px 20px 184px;
+        }
+    }
+</style>
+
+<script type="text/javascript">
+    // Phase tabs functionality
+    const phaseTabs = document.querySelectorAll('[role="tab"]');
+    const phasePanels = document.querySelectorAll('.phase-panel');
+    const phaseProgress = document.getElementById('phase-progress');
+    
+    // Function to update active phase
+    function updatePhase(phaseNumber) {
+      // Update tab states
+      phaseTabs.forEach(tab => {
+        const isActive = tab.getAttribute('data-phase') === phaseNumber;
+        tab.setAttribute('aria-selected', isActive);
+      });
+      
+      // Update panel visibility
+      phasePanels.forEach((panel, index) => {
+        panel.classList.toggle('hidden', (index + 1) !== parseInt(phaseNumber));
+        panel.classList.toggle('active', (index + 1) === parseInt(phaseNumber));
+      });
+      
+      // Update progress bar
+      if (phaseProgress) {
+        const progressWidth = (parseInt(phaseNumber) / 3) * 100;
+        phaseProgress.style.width = `${progressWidth}%`;
+      }
+    }
+    
+    // Add click handlers
+    phaseTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const phaseNumber = tab.getAttribute('data-phase');
+        updatePhase(phaseNumber);
+      });
+    });
+    
+    // Initialize with Phase 1 active
+    updatePhase('1');
+  </script>
