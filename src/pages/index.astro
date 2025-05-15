@@ -14,7 +14,9 @@ import Layout from '../layouts/Layout.astro';
 				<a href="/courses">View Our Courses</a>
 			</div>
 			<div class="right">
-	
+				<video autoplay muted loop id="myVideo">
+					<source src="/video/home.mp4" type="video/mp4">
+				</video>
 			</div>
 		</div>
 	</section>
@@ -25,8 +27,9 @@ import Layout from '../layouts/Layout.astro';
 		<h3>
 			We offer training experiences that stick. Say goodbye to boring lectures!
 		</h3>
-		<div class="flex-container">
-			<div>
+		<div class="review-container">
+			<div class="tp-logo"></div>
+			<!-- <div>
 				<div class="icon a"></div>
 				<h4>Live Events</h4>
 				<p>Experience the thrill of live training with industry experts. No snoozefests here.</p>
@@ -45,23 +48,24 @@ import Layout from '../layouts/Layout.astro';
 				<div class="icon d"></div>
 				<h4>Interactive Learning</h4>
 				<p>Get ready to participate. We believe in learning by doing, not just sitting.</p>
-			</div>
+			</div> -->
+			<script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script><iframe class='lc_reviews_widget' src='https://reputationhub.site/reputation/widgets/review_widget/RKrO9Gbn95gVvoq8PU8O' frameborder='0' scrolling='no' style='min-width: 100%; width: 100%;'></iframe>
 		</div>
 	</section>
 	<section id="featured">
 		<div class="flex-container">
 			<div class="left">
-				<h5 class="exam">AWS Exam Prep</h5>
+				<h5 class="exam">Upcoming Class</h5>
 				<h2>
-					Certified Cloud Practitioner
+					GenAI For Business Leaders
 				</h2>
 				<p>
-					This course offers a foundational understanding of cloud computing by exploring Amazon Web Services (AWS), a leading cloud provider. You'll learn essential cloud concepts and core AWS services, empowering you to communicate effectively with technical teams and make informed decisions about cloud technology.
+                    Generative AI is reshaping business, and this intensive course equips senior leaders (C-Suite, VPs, Directors, Owners, Board Members) to move beyond the hype and harness it for tangible advantage. You'll demystify the technology (including LLMs and Foundation Models), understand its real capabilities, and grasp its strategic implications, ensuring you know how it works and why it matters for your organization's future.
 				</p>
 				<p>
-					The course content has been created to directly align with the AWS Certified Cloud Practitioner exam guide, equipping you with the necessary knowledge to confidently pass the exam on your first attempt should you choose to pursue certification.
+                    Move quickly from potential to action by pinpointing "quick wins" for rapid deployment while gaining the confidence to navigate critical risks like data privacy, accuracy, bias, IP, and regulations. Learn to implement effective governance for secure employee AI use, foster AI-driven innovation, and future-proof your organization.
 				</p>
-				<a href="/courses/aws/ccp">Learn More</a>
+				<a href="/courses/genai/business-leaders-intro">Learn More</a>
 			</div>
 			<div class="right">
 
@@ -135,7 +139,8 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	section#hero div.right {
-		background-image: url(../assets/2.png);
+		/* background-image: url(../assets/2.png); */
+		overflow: hidden;
 		margin-left: 24px;
 		height: 540px;
 		background-position: center;
@@ -145,12 +150,17 @@ import Layout from '../layouts/Layout.astro';
 		display: none;
 	}
 
+	section#hero div.right video {
+		object-fit: cover;
+    	height: 100%;
+	}
+
 	section#hero h3 {
 		padding: 56px 0;
 	}
 
 	section#why {
-		padding: 80px 40px;
+		padding: 80px 40px 0px 40px;
 	}
 
 	section#why h2, section#why h3{
@@ -159,6 +169,22 @@ import Layout from '../layouts/Layout.astro';
 
 	section#why h3 {
 		padding: 56px 0 76px 0;
+	}
+
+	section#why .review-container {
+		position: relative;
+	}
+
+	section#why .tp-logo {
+		width: 100px;
+		height: 50px;
+		margin-left: 2rem;
+		position: absolute;
+		top: -10px;
+		background-image: url("../assets/trustpilot.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
 	section#why div.flex-container {
@@ -254,7 +280,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	section#about {
-		padding: 40px 40px 120px 40px;
+		padding: 40px 10px 120px 10px;
 		max-width: 1800px;
 		margin: auto;
 	}
@@ -272,9 +298,9 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	section#about div.flex-container > div{
-		width: 50%;
+		width: 100%;
 		padding: 0 40px;
-		min-width: 300px;
+		min-width: 330px;
 		flex-grow: 1;
 		margin-top: 80px;
 	}
@@ -320,8 +346,6 @@ import Layout from '../layouts/Layout.astro';
 
 	section#about div p {
 		margin: 24px 0 56px 0;
-		font-size: 20px;
-		font-weight: 500;
 	}
 
 	section#calendar {
@@ -353,7 +377,7 @@ import Layout from '../layouts/Layout.astro';
     }
 
     section#why {
-        padding: 100px 184px;
+        padding: 100px 184px 20px 184px;
     }
 
     section#featured {
@@ -380,6 +404,10 @@ import Layout from '../layouts/Layout.astro';
     section#about {
         padding: 100px 184px;
     }
+
+	section#about div.flex-container > div{
+		width: 50%;
+	}
 
     section#calendar {
         padding: 88px 180px;
