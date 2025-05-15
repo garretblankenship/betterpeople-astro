@@ -63,7 +63,19 @@ const {title, } = Astro.props;
 		<main>
 			<header>
 				<a href="/" class="logo"></a>
-				<div>
+				<div id="menu">
+					<ul>
+						<li><a href="/courses">Courses</a></li>
+						<li><a href="/ask-me-anything">Ask Me</a></li>
+						<li><a href="/#calendar">Contact Us</a></li>
+					</ul>
+					<button id="mobileMenuButton" aria-label="Toggle menu">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+							<g fill="#006f9b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+						</svg>
+					</button>
+				</div>
+				<div id="mobileMenu" class="hidden">
 					<ul>
 						<li><a href="/courses">Courses</a></li>
 						<li><a href="/ask-me-anything">Ask Me</a></li>
@@ -100,3 +112,23 @@ const {title, } = Astro.props;
 		height: 100%;
 	}
 </style>
+
+<script>
+	// Mobile menu toggle
+	const mobileMenuButton = document.getElementById('mobileMenuButton');
+	const mobileMenu = document.getElementById('mobileMenu');
+	
+	if (mobileMenuButton && mobileMenu) {
+	  mobileMenuButton.addEventListener('click', () => {
+		mobileMenu.classList.toggle('hidden');
+	  });
+	}
+  
+	// Close mobile menu when clicking on a link
+	const mobileLinks = document.querySelectorAll('#mobileMenu a');
+	mobileLinks.forEach(link => {
+	  link.addEventListener('click', () => {
+		mobileMenu?.classList.add('hidden');
+	  });
+	});
+  </script>
