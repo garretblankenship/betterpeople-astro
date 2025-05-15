@@ -108,6 +108,10 @@ a.plain:hover{
     background-color: transparent;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.main {
     background-color: #006F9B;
     color: #F9FAFB;
@@ -141,6 +145,10 @@ button {
 
 .hidden {
     display: none;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
 }
 
 header {
