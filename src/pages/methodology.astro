@@ -117,7 +117,7 @@ import Layout from '../layouts/Layout.astro';
                             </li>
                         </ul>
                     </div>
-                    <div class="right"></div>
+                    <div class="right a"></div>
                 </div>
             </div>
             <div 
@@ -150,7 +150,7 @@ import Layout from '../layouts/Layout.astro';
                             </li>
                         </ul>
                     </div>
-                    <div class="right"></div>
+                    <div class="right b"></div>
                 </div>
             </div>
             <div 
@@ -183,7 +183,7 @@ import Layout from '../layouts/Layout.astro';
                             </li>
                         </ul>
                     </div>
-                    <div class="right"></div>
+                    <div class="right c"></div>
                 </div>
             </div>
         </div>
@@ -384,13 +384,13 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	section#hero div.right {
-		background-image: url(../assets/2.png);
+		background-image: url(../assets/methodology.png);
 		overflow: hidden;
 		margin-left: 24px;
 		height: 540px;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 		border-radius: 40px;
 		display: none;
 	}
@@ -527,7 +527,7 @@ import Layout from '../layouts/Layout.astro';
 
     .phase-panel .container .right {
         flex-grow: 1;
-        background-image: url(../assets/2.png);
+        
 		overflow: hidden;
 		height: 540px;
 		background-position: center;
@@ -535,6 +535,18 @@ import Layout from '../layouts/Layout.astro';
 		background-size: cover;
 		border-radius: 40px;
         display: none;
+    }
+
+    .phase-panel .container .right.a {
+      background-image: url(../assets/17.png);
+    }
+
+    .phase-panel .container .right.b {
+      background-image: url(../assets/18.png);
+    }
+
+    .phase-panel .container .right.c {
+      background-image: url(../assets/19.png);
     }
 
     .phase-panel .container h4 {
@@ -630,9 +642,7 @@ import Layout from '../layouts/Layout.astro';
         border-radius: 0.75rem;
         overflow: hidden;
         margin: 20px 0px;
-        box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.1);
-        -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.1);
+        border: 1px solid #d2d2d2;
     }
 
     .accordion-header {
