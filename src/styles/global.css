@@ -158,12 +158,11 @@ header .logo{
     font-weight: 700;
     font-style: normal;
     font-size: 28px;
-    min-width: 240px;
     background-image: url(../assets/logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 268px;
+    width: 218px;
     height: 60px;
     background-color: unset;
     padding: 0;
@@ -258,6 +257,10 @@ footer div {
 
     header {
         padding: 24px 48px 60px 48px;
+    }
+
+    header .logo{
+        width: 268px;
     }
 
     header #menu ul {

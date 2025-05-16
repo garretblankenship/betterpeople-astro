@@ -357,12 +357,13 @@ import Layout from '../layouts/Layout.astro';
 
 	section#hero div.flex-container {
 		width: 100%;
-		padding: 80px 60px;
+		padding: 80px 10px;
 		display: flex;
 		position: relative;
 		z-index: 2;
 		align-items: center;
     justify-content: space-between;
+    text-align: center;
 	}
 
 	section#hero div.section-overlay {
@@ -401,7 +402,7 @@ import Layout from '../layouts/Layout.astro';
 
     section#philosophy {
 		background-color: #e8edee;
-		padding: 88px 40px;
+		padding: 88px 10px;
 	}
 
 	section#philosophy h2 {
@@ -465,7 +466,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 
     section#phases {
-		padding: 80px 40px 0px 40px;
+		padding: 80px 10px 0px 10px;
 	}
 
 	section#phases h2, section#phases h3{
@@ -591,8 +592,8 @@ import Layout from '../layouts/Layout.astro';
     } 
 
     section#differentiators {
-		padding: 80px 40px;
-	}
+		  padding: 80px 10px;
+	  }
 
 	section#differentiators div.flex-container {
 		display: flex;
@@ -698,7 +699,12 @@ import Layout from '../layouts/Layout.astro';
     }
 
     @media only screen and (min-width:1000px) {
-        section#hero div {
+      section#hero div.flex-container {
+		    padding: 80px 60px;
+        text-align: left;
+      }
+      
+      section#hero div {
             width: 50%;
         }
 
@@ -733,6 +739,10 @@ import Layout from '../layouts/Layout.astro';
 
         .phase-panel .container .right {
             display: block;
+        }
+
+        section#differentiators {
+          padding: 80px 40px;
         }
 
         section#differentiators div.flex-container {
