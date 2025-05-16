@@ -4,7 +4,6 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Methodology">
     <section id="hero">
-		<div class="section-overlay"></div>
 		<div class="flex-container">
 			<div class="left">
 				<h1>
@@ -129,22 +128,22 @@ import Layout from '../layouts/Layout.astro';
             >
                 <div class="container">
                     <div class="left">
-                        <h4 class="sub2">Immersive and Interactive Skill Building</h4>
+                        <h4 class="sub1">Immersive and Interactive Skill Building</h4>
                         <h5>Objective</h5>
                         <p>To facilitate active learning, skill practice, and knowledge retention through engaging, collaborative, and thoughtfully paced methods.</p>
                         <h5>How We Do It</h5>
                         <ul>
-                            <li><div class="bullet sub2"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     Interactive Content: Live demonstrations, hands-on labs, real-time Q&A, and integrated quizzes to keep engagement high.
                                 </p>
                             </li>
-                            <li><div class="bullet sub2"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     Facilitate Collaboration and Peer Learning: Encouraging participants to share experiences and learn from each other.
                                 </p>
                             </li>
-                            <li><div class="bullet sub2"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     "Mental Jogging" and Active Breaks: Maintaining engagement and optimizing cognitive function for sustainable learning.
                                 </p>
@@ -162,22 +161,22 @@ import Layout from '../layouts/Layout.astro';
             >
                 <div class="container">
                     <div class="left">
-                        <h4 class="sub3">Sustaining Momentum and Application</h4>
+                        <h4 class="sub1">Sustaining Momentum and Application</h4>
                         <h5>Objective</h5>
                         <p>To provide ongoing access to resources and foster a supportive community, ensuring learners can reinforce their knowledge, apply their new skills, and continue their development journey.</p>
                         <h5>How We Do It</h5>
                         <ul>
-                            <li><div class="bullet sub3"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     Comprehensive Resource Provision: All materials, video recordings, and Q&A documents housed in a central, easily accessible hub.
                                 </p>
                             </li>
-                            <li><div class="bullet sub3"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     Foster a Community of Practice: Creating a dedicated online space for the class to interact, ask questions, and receive support.
                                 </p>
                             </li>
-                            <li><div class="bullet sub3"></div>
+                            <li><div class="bullet sub1"></div>
                                 <p>
                                     Long-term Alumni Network: Integration into a broader network for continued engagement and professional growth.
                                 </p>
@@ -351,15 +350,19 @@ import Layout from '../layouts/Layout.astro';
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
 	}
 
 	section#hero div.flex-container {
 		width: 100%;
-		padding: 60px;
+		padding: 80px 60px;
 		display: flex;
 		position: relative;
 		z-index: 2;
 		align-items: center;
+    justify-content: space-between;
 	}
 
 	section#hero div.section-overlay {
@@ -515,7 +518,7 @@ import Layout from '../layouts/Layout.astro';
 
     .phase-panel .container {
         display: flex;
-        gap: 30px;
+        gap: 80px;
     }
 
     .phase-panel .container .left {
@@ -576,15 +579,18 @@ import Layout from '../layouts/Layout.astro';
     } 
 
     section#differentiators {
-		padding: 80px 14px;
+		padding: 80px 40px;
 	}
 
 	section#differentiators div.flex-container {
 		display: flex;
-		border-radius: 40px;
-		padding: 20px 24px;
 		flex-direction: column;
-        align-items: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #d2d2d2;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
 	}
 
 	section#differentiators div.flex-container > div {
@@ -690,12 +696,16 @@ import Layout from '../layouts/Layout.astro';
             border-radius: 40px;
         }
 
+        section#hero div.left {
+          max-width: 800px;
+        }
+
         section#hero div.right {
             display: block;
         }
 
         section#philosophy {
-            padding: 88px 180px;
+            padding: 120px 180px;
             border-radius: 40px;
         }
 
@@ -704,7 +714,7 @@ import Layout from '../layouts/Layout.astro';
         }
 
         section#phases {
-            padding: 100px 184px 20px 184px;
+            padding: 160px 180px 120px 180px;
         }
 
         .phase-panel .container .left {
@@ -715,20 +725,19 @@ import Layout from '../layouts/Layout.astro';
             display: block;
         }
 
-        section#differentiators {
-            padding: 80px 44px;
-        }
-
         section#differentiators div.flex-container {
             flex-direction: row;
+            gap: 80px;
+            text-align: left;
+            padding: 80px;
         }
 
-        section#differentiators div.flex-container > div {
-            width: 50%;
+        section#differentiators div.flex-container div.left {
+            width: 700px;
         }
 
-        section#differentiators div.left {
-            padding: 44px;
+        section#differentiators div.flex-container div.right {
+            flex-grow: 1;
         }
     }
 </style>
