@@ -135,6 +135,10 @@ button {
     transform: rotate(180deg);
 }
 
+.bold {
+    font-weight: 500;
+}
+
 header {
     padding: 24px 14px 50px 14px;
     display: flex;
